@@ -1,0 +1,9 @@
+<div>
+  <p>Nombre: <input type="text" [(ngModel)]="nombre"></p>
+  <p>CIF: <input type="text" [(ngModel)]="cif"></p>
+  <p>Dirección: <input type="text" [(ngModel)]="direccion"></p>
+  <p>Grupo: <input type="text" [(ngModel)]="grupo"></p>
+  <button (click)="addCliente()">Add</button>
+</div>
+
+<app-cliente [data]="cliente"></app-cliente>
